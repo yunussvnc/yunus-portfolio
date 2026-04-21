@@ -81,27 +81,6 @@ export const projects = [
     visualClass: 'bg-gradient-to-br from-blue-700 via-sky-600 to-teal-500',
   },
   {
-    name: 'IdentiPlant',
-    category: 'Computer Vision',
-    hero: 'Plant identification project centered on visual recognition and practical classification workflows.',
-    description:
-      'Added as a third portfolio project to strengthen the computer vision side of the portfolio. This project is presented as a plant identification case study and linked directly to its GitHub repository.',
-    results: [
-      'Expands the portfolio with a dedicated computer vision and classification project',
-      'Creates a stronger balance between AI search systems, dashboards, and vision-based work',
-      'Included as a portfolio-ready GitHub project link for future deeper documentation',
-    ],
-    highlights: [
-      'Useful as a visual AI project alongside semantic search and full-stack product work',
-      'Can later be upgraded with dataset, model, and accuracy details when full project notes are available',
-      'Now part of the visible project lineup on the live portfolio',
-    ],
-    stack: ['Computer Vision', 'Python', 'Machine Learning'],
-    github: 'https://github.com/devmehmetakifv/IdentiPlant',
-    demo: '',
-    visualClass: 'bg-gradient-to-br from-emerald-700 via-green-600 to-lime-500',
-  },
-  {
     name: 'Ayasofya Voice Guide',
     category: 'Voice AI Experience',
     hero: 'Voice-guided cultural experience project built around speech and conversational interaction.',
@@ -121,6 +100,27 @@ export const projects = [
     github: 'https://github.com/yunussvnc/ayasofya-voice-guide',
     demo: '',
     visualClass: 'bg-gradient-to-br from-amber-600 via-orange-600 to-rose-700',
+  },
+  {
+    name: 'IdentiPlant',
+    category: 'Computer Vision',
+    hero: 'Plant identification project centered on visual recognition and practical classification workflows.',
+    description:
+      'A computer vision case study that rounds out the portfolio with image-based recognition work. It complements the retrieval, analytics, and voice projects by showing interest in classification-oriented AI workflows.',
+    results: [
+      'Adds a dedicated visual AI project to the portfolio lineup',
+      'Balances product-facing work with a model-centered recognition use case',
+      'Keeps the portfolio diversified across LLM, full-stack, voice, and vision categories',
+    ],
+    highlights: [
+      'Useful as a computer vision showcase alongside semantic search and voice AI projects',
+      'Can be strengthened further with dataset, architecture, and accuracy details when those notes are consolidated',
+      'Included as a visible GitHub-linked project to broaden technical range',
+    ],
+    stack: ['Computer Vision', 'Python', 'Machine Learning'],
+    github: 'https://github.com/devmehmetakifv/IdentiPlant',
+    demo: '',
+    visualClass: 'bg-gradient-to-br from-emerald-700 via-green-600 to-lime-500',
   },
 ] as const
 
