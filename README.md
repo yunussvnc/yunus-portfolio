@@ -1,6 +1,6 @@
 # Personal Portfolio Site
 
-React + TypeScript + Tailwind CSS portfolio site for Yunus Emre Sevinc.
+React + TypeScript + Tailwind CSS portfolio site for Yunusemre Sevinc.
 
 ## Sections
 

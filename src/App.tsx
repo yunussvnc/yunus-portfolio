@@ -8,7 +8,7 @@ function App() {
       <header className="sticky top-0 z-30 border-b border-slate-200/80 bg-white/85 backdrop-blur">
         <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
           <a href="#home" className="text-sm font-semibold tracking-[0.22em] text-slate-950">
-            YUNUS EMRE SEVINC
+            YUNUSEMRE SEVINC
           </a>
 
           <nav className="hidden items-center gap-6 text-sm text-slate-600 md:flex">
