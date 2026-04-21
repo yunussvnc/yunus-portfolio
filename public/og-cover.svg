@@ -1,0 +1,17 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="630" fill="#0F172A"/>
+  <circle cx="990" cy="110" r="220" fill="#1D4ED8" fill-opacity="0.35"/>
+  <circle cx="170" cy="520" r="240" fill="#14B8A6" fill-opacity="0.25"/>
+  <rect x="88" y="84" width="1024" height="462" rx="32" fill="white" fill-opacity="0.06" stroke="white" stroke-opacity="0.14"/>
+  <text x="110" y="178" fill="#93C5FD" font-family="Arial, sans-serif" font-size="24" letter-spacing="6">AI / SOFTWARE ENGINEER</text>
+  <text x="110" y="278" fill="white" font-family="Arial, sans-serif" font-size="68" font-weight="700">
+    <tspan x="110" dy="0">Yunus Emre</tspan>
+    <tspan x="110" dy="78">Sevinc</tspan>
+  </text>
+  <text x="110" y="430" fill="#CBD5E1" font-family="Arial, sans-serif" font-size="28">
+    Semantic search, AI-enabled products, and full-stack delivery.
+  </text>
+  <text x="110" y="490" fill="#E2E8F0" font-family="Arial, sans-serif" font-size="24">
+    github.com/yunussvnc
+  </text>
+</svg>
