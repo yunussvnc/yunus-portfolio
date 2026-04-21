@@ -102,25 +102,25 @@ export const projects = [
     visualClass: 'bg-gradient-to-br from-emerald-700 via-green-600 to-lime-500',
   },
   {
-    name: 'SayfaSirket',
-    category: 'Corporate Web Platform',
-    hero: 'TypeScript-heavy company website project with frontend, backend, and deployment-oriented structure.',
+    name: 'Ayasofya Voice Guide',
+    category: 'Voice AI Experience',
+    hero: 'Voice-guided cultural experience project built around speech and conversational interaction.',
     description:
-      'A corporate website codebase that broadens the portfolio with production-style web delivery. The repository structure shows a fuller product setup with frontend app code, backend logic, reusable components, docs, public assets, and deployment configuration.',
+      'A differentiated portfolio piece focused on voice interaction rather than a standard dashboard or brochure website. The repository structure shows a React and TypeScript app with dedicated voice-service integrations and assistant-oriented components.',
     results: [
-      '69 commits in the repository history',
-      'TypeScript is the dominant implementation language at 98 percent',
-      'Includes app, backend, components, docs, and public layers in one project structure',
+      'Expands the portfolio with a voice-first AI interaction project',
+      'Includes dedicated AssemblyAI and ElevenLabs service configuration in the codebase',
+      'Built as a Vite and TypeScript application with reusable UI and assistant components',
     ],
     highlights: [
-      'Useful as a business-facing full-stack web project alongside AI and analytics work',
-      'Shows experience with application structure, deployment configuration, and organized project documentation',
-      'Backed by Firebase-related configuration and a Next.js-based setup visible in the repository files',
+      'Stands out more than another standard corporate website because it is centered on audio and guided interaction',
+      'Contains a dedicated `VoiceAssistant` component plus voice-service hooks and service layers',
+      'Adds stronger variety to the portfolio alongside semantic search, analytics, and computer vision',
     ],
-    stack: ['TypeScript', 'Next.js', 'Firebase', 'CSS', 'JavaScript'],
-    github: 'https://github.com/yunussvnc/sayfasirket',
+    stack: ['TypeScript', 'React', 'Vite', 'Tailwind CSS', 'AssemblyAI', 'ElevenLabs'],
+    github: 'https://github.com/yunussvnc/ayasofya-voice-guide',
     demo: '',
-    visualClass: 'bg-gradient-to-br from-fuchsia-700 via-violet-700 to-indigo-700',
+    visualClass: 'bg-gradient-to-br from-amber-600 via-orange-600 to-rose-700',
   },
 ] as const
 
