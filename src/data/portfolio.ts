@@ -6,6 +6,7 @@ export const profile = {
   github: 'https://github.com/yunussvnc',
   linkedin: 'https://linkedin.com/in/sevinç-yunusemre-23a926257/',
   resumePath: '/resume.html',
+  photoPath: '/profile-photo.jpg',
   summary:
     'I build AI-enabled and full-stack products with React, TypeScript, Python, and modern data tooling. My recent work focuses on semantic search, recommendation systems, dashboards, and backend integrations that can be explained with measurable outcomes.',
   intro:
@@ -78,6 +79,27 @@ export const projects = [
     github: 'https://github.com/yunussvnc/seoanaliz',
     demo: '',
     visualClass: 'bg-gradient-to-br from-blue-700 via-sky-600 to-teal-500',
+  },
+  {
+    name: 'IdentiPlant',
+    category: 'Computer Vision',
+    hero: 'Plant identification project centered on visual recognition and practical classification workflows.',
+    description:
+      'Added as a third portfolio project to strengthen the computer vision side of the portfolio. This project is presented as a plant identification case study and linked directly to its GitHub repository.',
+    results: [
+      'Expands the portfolio with a dedicated computer vision and classification project',
+      'Creates a stronger balance between AI search systems, dashboards, and vision-based work',
+      'Included as a portfolio-ready GitHub project link for future deeper documentation',
+    ],
+    highlights: [
+      'Useful as a visual AI project alongside semantic search and full-stack product work',
+      'Can later be upgraded with dataset, model, and accuracy details when full project notes are available',
+      'Now part of the visible project lineup on the live portfolio',
+    ],
+    stack: ['Computer Vision', 'Python', 'Machine Learning'],
+    github: 'https://github.com/devmehmetakifv/IdentiPlant',
+    demo: '',
+    visualClass: 'bg-gradient-to-br from-emerald-700 via-green-600 to-lime-500',
   },
 ] as const
 

@@ -29,7 +29,7 @@ function App() {
 
       <main>
         <section id="home" className="mx-auto max-w-6xl px-6 pb-16 pt-16 md:pb-24 md:pt-24">
-          <div className="grid gap-10 lg:grid-cols-[1.3fr_0.7fr] lg:items-start">
+          <div className="grid gap-10 lg:grid-cols-[1.15fr_0.85fr] lg:items-start">
             <div className="space-y-8">
               <div className="inline-flex rounded-full border border-blue-200 bg-blue-50 px-4 py-1 text-sm font-medium text-blue-700">
                 {profile.title}
@@ -78,7 +78,21 @@ function App() {
               </div>
             </div>
 
-            <aside className="rounded-[2rem] border border-slate-200 bg-white p-7 shadow-soft">
+            <aside className="overflow-hidden rounded-[2rem] border border-slate-200 bg-white shadow-soft">
+              <div className="relative aspect-[4/4.6] overflow-hidden bg-slate-100">
+                <img
+                  src={profile.photoPath}
+                  alt={`${profile.name} speaking at an AI event`}
+                  className="h-full w-full object-cover object-top"
+                />
+                <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-slate-950/85 via-slate-950/30 to-transparent p-5 text-white">
+                  <p className="text-xs font-semibold uppercase tracking-[0.24em] text-slate-300">Profile</p>
+                  <p className="mt-2 text-lg font-semibold">{profile.name}</p>
+                  <p className="mt-1 text-sm text-slate-200">AI internship demo day presentation</p>
+                </div>
+              </div>
+
+              <div className="p-7">
               <p className="text-sm font-semibold uppercase tracking-[0.28em] text-slate-400">Snapshot</p>
               <div className="mt-6 space-y-6">
                 <div>
@@ -112,6 +126,7 @@ function App() {
                   </a>
                 </div>
               </div>
+              </div>
             </aside>
           </div>
         </section>
@@ -136,7 +151,7 @@ function App() {
               description="Projects are presented with real implementation scope and measurable outcomes from the current codebase."
             />
 
-            <div className="mt-12 grid gap-8 lg:grid-cols-2">
+            <div className="mt-12 grid gap-8 xl:grid-cols-3">
               {projects.map((project) => (
                 <article
                   key={project.name}
