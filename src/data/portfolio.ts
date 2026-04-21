@@ -101,6 +101,27 @@ export const projects = [
     demo: '',
     visualClass: 'bg-gradient-to-br from-emerald-700 via-green-600 to-lime-500',
   },
+  {
+    name: 'SayfaSirket',
+    category: 'Corporate Web Platform',
+    hero: 'TypeScript-heavy company website project with frontend, backend, and deployment-oriented structure.',
+    description:
+      'A corporate website codebase that broadens the portfolio with production-style web delivery. The repository structure shows a fuller product setup with frontend app code, backend logic, reusable components, docs, public assets, and deployment configuration.',
+    results: [
+      '69 commits in the repository history',
+      'TypeScript is the dominant implementation language at 98 percent',
+      'Includes app, backend, components, docs, and public layers in one project structure',
+    ],
+    highlights: [
+      'Useful as a business-facing full-stack web project alongside AI and analytics work',
+      'Shows experience with application structure, deployment configuration, and organized project documentation',
+      'Backed by Firebase-related configuration and a Next.js-based setup visible in the repository files',
+    ],
+    stack: ['TypeScript', 'Next.js', 'Firebase', 'CSS', 'JavaScript'],
+    github: 'https://github.com/yunussvnc/sayfasirket',
+    demo: '',
+    visualClass: 'bg-gradient-to-br from-fuchsia-700 via-violet-700 to-indigo-700',
+  },
 ] as const
 
 export const strengths = [

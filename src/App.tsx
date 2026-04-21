@@ -151,7 +151,7 @@ function App() {
               description="Projects are presented with real implementation scope and measurable outcomes from the current codebase."
             />
 
-            <div className="mt-12 grid gap-8 xl:grid-cols-3">
+            <div className="mt-12 grid gap-8 md:grid-cols-2">
               {projects.map((project) => (
                 <article
                   key={project.name}
@@ -230,10 +230,10 @@ function App() {
             </div>
 
             <div className="mt-10 rounded-[2rem] border border-dashed border-slate-300 bg-slate-50 p-8">
-              <p className="text-sm uppercase tracking-[0.25em] text-slate-500">Next flagship case study</p>
+              <p className="text-sm uppercase tracking-[0.25em] text-slate-500">Future flagship case study</p>
               <h3 className="mt-3 text-2xl font-semibold tracking-tight text-slate-950">Medical AI project recovery</h3>
               <p className="mt-3 max-w-3xl leading-7 text-slate-600">
-                The portfolio structure is ready for a third flagship AI case study. Once the missing medical project folder is recovered, it can be added without changing the design system or content hierarchy.
+                The portfolio structure is ready for an additional medical AI case study. Once the missing project folder is recovered, it can be added without changing the design system or content hierarchy.
               </p>
             </div>
           </div>
