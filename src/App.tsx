@@ -102,7 +102,7 @@ function App() {
                 <div>
                   <p className="text-sm text-slate-500">Focus areas</p>
                   <p className="mt-2 text-lg font-semibold leading-8 text-slate-950">
-                    RAG systems, LLM orchestration, and full-stack product delivery
+                    Scalable backend systems, RESTful APIs, and RAG/LLM integrations
                   </p>
                 </div>
                 <div>

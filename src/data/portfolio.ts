@@ -1,6 +1,6 @@
 export const profile = {
   name: 'Yunusemre Sevinc',
-  title: 'AI / Software Engineer',
+  title: 'Backend Software Engineer',
   location: 'Istanbul, Turkey',
   email: 'yunusemree.sevinc@gmail.com',
   github: 'https://github.com/yunussvnc',
@@ -8,7 +8,7 @@ export const profile = {
   resumePath: '/resume.html',
   photoPath: '/profile-photo.jpg',
   summary:
-    'I build AI-powered systems with RAG orchestration, vector search (Qdrant), and LLM-based workflows, shipping production systems with F1 0.90 accuracy and 92% Precision@3 (AsEmOs, 352-test suite, Render cloud deployment).',
+    'Backend-focused Software Engineer with production experience building scalable RESTful APIs with FastAPI, PostgreSQL schema design, and Redis-backed performance optimization. I build reliable systems with layered architecture (Repository, Observer) principles and test-driven development (352-test suite).',
   intro:
     'Software Engineering graduate (Istanbul Health and Technology University, full scholarship) turning technical ideas into usable products across AI, full-stack web development, and health-tech oriented software.',
 } as const
@@ -169,19 +169,27 @@ export const strengths = [
 
 export const skills = [
   {
-    title: 'AI & Data',
-    items: ['RAG Architecture', 'LLM Orchestration (Groq API, Llama 3.1)', 'AI Agents', 'Qdrant', 'TensorFlow', 'Keras', 'Scikit-learn', 'Pandas', 'OpenCV'],
-  },
-  {
-    title: 'Languages',
-    items: ['Python', 'JavaScript', 'TypeScript', 'C#', 'Java', 'C++'],
-  },
-  {
-    title: 'Frameworks & Tools',
-    items: ['FastAPI', 'Flask', 'React', 'Next.js', 'React Native (Expo)', 'Spring Boot', 'Node.js', 'Tailwind CSS', 'shadcn/ui', 'Framer Motion', 'Docker', 'Git', 'Redis'],
+    title: 'Backend & API',
+    items: ['FastAPI', 'RESTful API Design', 'Prisma ORM', 'Layered Architecture (Repository, Observer)', 'JWT Auth', 'Flask', 'Spring Boot'],
   },
   {
     title: 'Database & Infra',
-    items: ['PostgreSQL', 'MySQL', 'Prisma ORM', 'Render', 'PM2', 'Supabase', 'Firebase', 'JWT Auth'],
+    items: ['PostgreSQL', 'MySQL', 'Redis', 'Supabase', 'Firebase', 'Render', 'PM2', 'Docker'],
+  },
+  {
+    title: 'Programming Languages',
+    items: ['Python', 'JavaScript', 'TypeScript', 'C#', 'Java', 'C++'],
+  },
+  {
+    title: 'Test & Quality',
+    items: ['Pytest (352-test suite)', 'Unit Testing', 'Code Review'],
+  },
+  {
+    title: 'AI & Data',
+    items: ['RAG Architecture', 'Qdrant (Vector DB)', 'LLM Orchestration (Groq API)', 'TensorFlow', 'Pandas'],
+  },
+  {
+    title: 'Languages',
+    items: ['English (B1)', 'Spanish (A1)'],
   },
 ] as const
