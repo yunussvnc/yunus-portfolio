@@ -8,9 +8,9 @@ export const profile = {
   resumePath: '/resume.html',
   photoPath: '/profile-photo.jpg',
   summary:
-    'I build AI-enabled and full-stack products with React, TypeScript, Python, and modern data tooling. My recent work focuses on RAG pipelines, LLM-powered backend systems, and full-stack products that can be explained with measurable outcomes.',
+    'I build AI-powered systems with RAG orchestration, vector search (Qdrant), and LLM-based workflows, shipping production systems with F1 0.90 accuracy and 92% Precision@3 (AsEmOs, 352-test suite, Render cloud deployment).',
   intro:
-    'Final-year Software Engineering student turning technical ideas into usable products across AI, full-stack web development, and health-tech oriented software.',
+    'Software Engineering graduate (Istanbul Health and Technology University, full scholarship) turning technical ideas into usable products across AI, full-stack web development, and health-tech oriented software.',
 } as const
 
 export const stats = [
@@ -22,18 +22,25 @@ export const stats = [
 
 export const experience = [
   {
+    role: 'Full-Stack Developer (Intern / Part-time)',
+    company: 'Private Sector (Software Company)',
+    period: 'Sep 2025 - Dec 2025',
+    summary:
+      'Worked directly with 4 clients on requirements analysis and built authenticated admin panels for corporate sites with Next.js and Prisma ORM, using shadcn/ui and Tailwind CSS for a consistent design system. Managed production deployment with PM2 and SEO with next-seo on cPanel/Node.js hosting.',
+  },
+  {
     role: 'R&D Engineer Intern',
     company: 'Istanbul Health and Technology University',
     period: 'Jul 2025 - Aug 2025',
     summary:
-      'Supported AI-focused research and prototype implementation in a university R&D environment with an emphasis on experimentation and applied engineering.',
+      'Researched RAG architecture and LLM-based orchestration workflows for academic AI projects, contributing to two projects reaching production-ready stage, and supported model evaluation and data analysis for publication-ready research.',
   },
   {
     role: 'AI Intern',
-    company: 'Arvis Teknoloji',
+    company: 'Arvis Technology',
     period: 'Jul 2024 - Aug 2024',
     summary:
-      'Contributed to practical machine learning and AI implementation tasks, building hands-on experience in model-oriented workflows and technical delivery.',
+      'Integrated deep learning and computer vision algorithms into live projects, completing the Arvis DeepTech AI internship program with a certificate of achievement, and built a data preprocessing pipeline in Python that improved model accuracy.',
   },
 ] as const
 
@@ -162,19 +169,19 @@ export const strengths = [
 
 export const skills = [
   {
-    title: 'Frontend',
-    items: ['React', 'TypeScript', 'Tailwind CSS', 'Vite'],
+    title: 'AI & Data',
+    items: ['RAG Architecture', 'LLM Orchestration (Groq API, Llama 3.1)', 'AI Agents', 'Qdrant', 'TensorFlow', 'Keras', 'Scikit-learn', 'Pandas', 'OpenCV'],
   },
   {
-    title: 'Backend',
-    items: ['Python', 'FastAPI', 'Flask', 'Supabase', 'PostgreSQL'],
+    title: 'Languages',
+    items: ['Python', 'JavaScript', 'TypeScript', 'C#', 'Java', 'C++'],
   },
   {
-    title: 'AI / Data',
-    items: ['TensorFlow', 'Keras', 'Scikit-learn', 'Sentence Transformers', 'Qdrant', 'Pandas', 'NumPy'],
+    title: 'Frameworks & Tools',
+    items: ['FastAPI', 'Flask', 'React', 'Next.js', 'React Native (Expo)', 'Spring Boot', 'Node.js', 'Tailwind CSS', 'shadcn/ui', 'Framer Motion', 'Docker', 'Git', 'Redis'],
   },
   {
-    title: 'Tools',
-    items: ['Git', 'Docker', 'Cursor', 'GitHub Copilot'],
+    title: 'Database & Infra',
+    items: ['PostgreSQL', 'MySQL', 'Prisma ORM', 'Render', 'PM2', 'Supabase', 'Firebase', 'JWT Auth'],
   },
 ] as const
