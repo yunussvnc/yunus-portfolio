@@ -8,7 +8,7 @@ export const profile = {
   resumePath: '/resume.html',
   photoPath: '/profile-photo.jpg',
   summary:
-    'I build AI-enabled and full-stack products with React, TypeScript, Python, and modern data tooling. My recent work focuses on semantic search, recommendation systems, dashboards, and backend integrations that can be explained with measurable outcomes.',
+    'I build AI-enabled and full-stack products with React, TypeScript, Python, and modern data tooling. My recent work focuses on RAG pipelines, LLM-powered backend systems, and full-stack products that can be explained with measurable outcomes.',
   intro:
     'Final-year Software Engineering student turning technical ideas into usable products across AI, full-stack web development, and health-tech oriented software.',
 } as const
@@ -17,7 +17,7 @@ export const stats = [
   { value: '5/5', label: 'location-aware chatbot tests passed', detail: 'validated in the documented AI service test suite' },
   { value: '198', label: 'real Istanbul venues indexed', detail: 'used in the active semantic search flow' },
   { value: '7', label: 'Supabase Edge Functions', detail: 'covering analysis, reporting, support, and admin operations' },
-  { value: '11', label: 'typed app resources', detail: 'modeled in the SEO dashboard frontend client' },
+  { value: '92%', label: 'Precision@3', detail: 'semantic matching accuracy in the AsEmOs RAG pipeline' },
 ] as const
 
 export const experience = [
@@ -60,25 +60,67 @@ export const projects = [
     visualClass: 'bg-gradient-to-br from-slate-950 via-blue-900 to-cyan-600',
   },
   {
-    name: 'SEO Analytics Dashboard',
-    category: 'Full Stack Web App',
-    hero: 'Authenticated SEO workspace with audits, keyword tracking, reporting, and admin content operations.',
+    name: 'AsEmOs',
+    category: 'AI / RAG Platform',
+    hero: 'AI-powered social recommendation platform delivering personalized venue suggestions from location, budget, and atmosphere signals (graduation project).',
     description:
-      'A React and Supabase dashboard that centralizes SEO analysis flows into one interface. It includes auth, persisted project history, keyword snapshots, report generation, support handling, and CMS-oriented admin resources.',
+      'Built an end-to-end mobile and web platform around a RAG (Retrieval-Augmented Generation) architecture that generates personalized venue recommendations. Designed an orchestration pipeline combining Qdrant vector search with Groq reranking, and shipped the backend to production on Render alongside a 352-test pytest suite.',
     results: [
-      '7 Supabase Edge Functions implemented for key product workflows',
-      '11 typed database-backed resources modeled in the frontend client',
-      '4 SEO score dimensions and 3 page-speed metrics exposed in the UI',
+      '92% Precision@3 and F1 0.90 on semantic matching accuracy',
+      '352-test pytest suite maintained through production rollout',
+      'Backend deployed to production on Render',
     ],
     highlights: [
-      'Combines authentication, Row Level Security, reporting, keyword tracking, and admin operations',
-      'Persists project history and reports through PostgreSQL-backed Supabase tables',
-      'Ready for live provider integrations even though current analysis responses are simulated',
+      'RAG architecture combining Qdrant vector search with Groq reranking',
+      'End-to-end mobile (React Native / Expo) and web (Next.js) clients',
+      'FastAPI backend with PostgreSQL and Redis for caching and session state',
     ],
-    stack: ['React', 'TypeScript', 'Vite', 'Tailwind CSS', 'Supabase', 'PostgreSQL'],
-    github: 'https://github.com/yunussvnc/seoanaliz',
+    stack: ['Python', 'FastAPI', 'React Native', 'Expo', 'Next.js', 'PostgreSQL', 'Qdrant', 'Redis', 'Groq API'],
+    github: 'https://github.com/yunussvnc/Bitirmeprojesi',
     demo: '',
-    visualClass: 'bg-gradient-to-br from-blue-700 via-sky-600 to-teal-500',
+    visualClass: 'bg-gradient-to-br from-indigo-800 via-violet-600 to-fuchsia-500',
+  },
+  {
+    name: 'Futbol Analiz ve Tahmin Platformu',
+    category: 'ML / Real-Time Data',
+    hero: 'Live football data platform producing statistical analysis and ML-based match outcome predictions.',
+    description:
+      'Built a service architecture over live football data that separates FeatureBuilder, MLPredictor, and LLMAnalyzer components. Delivered real-time data flow via WebSocket and Redis Pub/Sub, and built a scraping pipeline that collected 148,000+ historical matches to train the prediction model.',
+    results: [
+      '148,000+ historical matches collected via a dedicated scraping pipeline',
+      'Real-time data flow through WebSocket and Redis Pub/Sub',
+      'Modular FeatureBuilder, MLPredictor, and LLMAnalyzer components',
+    ],
+    highlights: [
+      'FastAPI backend with SQLAlchemy over PostgreSQL',
+      'Combines classic machine learning with an LLM analysis layer',
+      'Real-time updates via WebSocket and Redis Pub/Sub',
+    ],
+    stack: ['FastAPI', 'PostgreSQL', 'SQLAlchemy', 'Redis Pub/Sub', 'WebSocket', 'Machine Learning', 'LLM Integration'],
+    github: 'https://github.com/yunussvnc/Futbol-Analiz-ve-Tahmin-Platformu',
+    demo: '',
+    visualClass: 'bg-gradient-to-br from-green-800 via-emerald-600 to-teal-500',
+  },
+  {
+    name: 'Klinik Karaciğer Asistanı',
+    category: 'Health-Tech / Educational Chatbot',
+    hero: 'Literature-referenced, safety-flagged educational chatbot for liver disease topics.',
+    description:
+      'Built an educational assistant chatbot on liver disease topics with literature references and explicit safety disclaimers. Integrated the OpenAI API through an Express backend with a prompt design that keeps LLM output within safe, responsible boundaries.',
+    results: [
+      'Literature-referenced answers with explicit safety disclaimers',
+      'Express backend integrated with the OpenAI API',
+      'Prompt design constrains output to safe, responsible boundaries',
+    ],
+    highlights: [
+      'Node.js/Express backend with OpenAI API integration',
+      'Educational-only scope with clear safety framing',
+      'Prompt design focused on responsible LLM output boundaries',
+    ],
+    stack: ['Node.js', 'Express', 'OpenAI API'],
+    github: 'https://github.com/yunussvnc/klinik-karaciger-chatbotu',
+    demo: '',
+    visualClass: 'bg-gradient-to-br from-rose-800 via-red-600 to-orange-500',
   },
   {
     name: 'Ayasofya Voice Guide',

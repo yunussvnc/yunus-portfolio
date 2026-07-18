@@ -27,79 +27,100 @@
       }
 
       .page {
-        max-width: 980px;
-        margin: 40px auto;
+        max-width: 960px;
+        margin: 28px auto;
         background: var(--paper);
         border: 1px solid var(--line);
-        border-radius: 28px;
+        border-radius: 26px;
         overflow: hidden;
         box-shadow: 0 24px 80px rgba(15, 23, 42, 0.08);
       }
 
       .hero {
-        padding: 56px 56px 40px;
+        padding: 36px 40px 26px;
         background: linear-gradient(135deg, #0f172a 0%, #1d4ed8 55%, #14b8a6 100%);
         color: white;
       }
 
-      .hero h1 {
-        margin: 0;
-        font-size: 46px;
-        line-height: 1.05;
-      }
-
-      .hero p {
-        margin: 16px 0 0;
-        max-width: 720px;
-        line-height: 1.75;
-        color: rgba(255, 255, 255, 0.88);
-      }
-
       .badge {
         display: inline-block;
-        margin-bottom: 18px;
-        padding: 8px 14px;
+        padding: 7px 12px;
         border-radius: 999px;
         background: rgba(255, 255, 255, 0.12);
         border: 1px solid rgba(255, 255, 255, 0.18);
-        font-size: 13px;
+        font-size: 11px;
         font-weight: 700;
         letter-spacing: 0.18em;
         text-transform: uppercase;
       }
 
+      .hero h1 {
+        margin: 14px 0 8px;
+        font-size: 38px;
+        line-height: 1.02;
+      }
+
+      .hero-summary {
+        margin: 0;
+        max-width: 760px;
+        font-size: 15px;
+        line-height: 1.65;
+        color: rgba(255, 255, 255, 0.9);
+      }
+
+      .hero-bullets {
+        margin: 14px 0 0;
+        padding-left: 18px;
+        max-width: 760px;
+      }
+
+      .hero-bullets li {
+        color: rgba(255, 255, 255, 0.88);
+        font-size: 14px;
+        line-height: 1.6;
+        margin: 4px 0;
+      }
+
       .meta {
         display: grid;
         grid-template-columns: repeat(4, minmax(0, 1fr));
-        gap: 16px;
-        padding: 26px 56px 0;
+        gap: 12px;
+        padding: 18px 40px 0;
       }
 
       .meta-card {
         border: 1px solid var(--line);
-        border-radius: 18px;
-        padding: 16px;
+        border-radius: 16px;
+        padding: 12px 14px;
         background: #fff;
       }
 
       .meta-card span {
         display: block;
-        font-size: 12px;
+        font-size: 11px;
         letter-spacing: 0.16em;
         text-transform: uppercase;
         color: #64748b;
-        margin-bottom: 8px;
+        margin-bottom: 6px;
+      }
+
+      .meta-card strong,
+      .meta-card a {
+        color: var(--ink);
+        text-decoration: none;
+        font-size: 13px;
+        line-height: 1.45;
+        word-break: break-word;
       }
 
       .content {
         display: grid;
-        grid-template-columns: 1.1fr 0.9fr;
-        gap: 0;
+        grid-template-columns: 1.16fr 0.84fr;
       }
 
       .main,
       .side {
-        padding: 40px 56px 56px;
+        padding: 28px 40px 36px;
       }
 
       .side {
@@ -107,72 +128,86 @@
         border-left: 1px solid var(--line);
       }
 
+      section + section {
+        margin-top: 26px;
+      }
+
       h2 {
-        margin: 0 0 16px;
-        font-size: 16px;
+        margin: 0 0 12px;
+        font-size: 13px;
         color: var(--brand);
         letter-spacing: 0.18em;
         text-transform: uppercase;
       }
 
-      h3 {
-        margin: 0;
-        font-size: 22px;
-        line-height: 1.3;
-      }
-
-      section + section {
-        margin-top: 34px;
-      }
-
-      p,
-      li {
-        font-size: 15px;
-        line-height: 1.7;
-        color: var(--muted);
-      }
-
-      ul {
-        margin: 14px 0 0;
-        padding-left: 18px;
-      }
-
       .item + .item {
-        margin-top: 22px;
-        padding-top: 22px;
+        margin-top: 16px;
+        padding-top: 16px;
         border-top: 1px solid var(--line);
       }
 
+      h3 {
+        margin: 0;
+        font-size: 18px;
+        line-height: 1.25;
+      }
+
       .eyebrow {
-        margin-top: 8px;
-        font-size: 13px;
+        margin-top: 4px;
+        font-size: 12px;
         font-weight: 700;
         color: #334155;
       }
 
-      .pill-wrap {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 10px;
-      }
-
-      .pill {
-        padding: 8px 12px;
-        border-radius: 999px;
-        background: var(--soft);
-        color: #1e3a8a;
-        border: 1px solid #bfdbfe;
+      p,
+      li {
         font-size: 13px;
-        font-weight: 600;
+        line-height: 1.58;
+        color: var(--muted);
       }
 
-      a {
-        color: inherit;
+      ul {
+        margin: 10px 0 0;
+        padding-left: 18px;
+      }
+
+      li + li {
+        margin-top: 3px;
+      }
+
+      .compact-list {
+        margin-top: 8px;
+      }
+
+      .skill-group + .skill-group,
+      .lang-row + .lang-row,
+      .cert-row + .cert-row {
+        margin-top: 10px;
+      }
+
+      .skill-group strong,
+      .lang-row strong {
+        color: var(--ink);
+      }
+
+      .project-link {
+        display: inline-block;
+        margin-top: 8px;
+        color: #1d4ed8;
+        font-size: 12px;
+        font-weight: 600;
+        text-decoration: none;
+      }
+
+      .small-text {
+        font-size: 12px;
+        line-height: 1.55;
+        color: var(--muted);
       }
 
       .print-note {
-        padding: 0 56px 32px;
-        font-size: 13px;
+        padding: 0 40px 24px;
+        font-size: 12px;
         color: #64748b;
       }
 
@@ -186,13 +221,13 @@
         .main,
         .side,
         .print-note {
-          padding-left: 24px;
-          padding-right: 24px;
+          padding-left: 22px;
+          padding-right: 22px;
         }
 
         .meta {
           grid-template-columns: 1fr 1fr;
-          padding: 20px 24px 0;
+          padding: 16px 22px 0;
         }
 
         .content {
@@ -215,10 +250,16 @@
           margin: 0;
           max-width: none;
           border: none;
+          border-radius: 0;
         }
 
         .print-note {
           display: none;
+        }
+
+        .item,
+        section {
+          break-inside: avoid;
         }
       }
     </style>
@@ -228,29 +269,32 @@
       <header class="hero">
         <div class="badge">AI / Software Engineer</div>
         <h1>Yunusemre Sevinc</h1>
-        <p>
-          Final-year Software Engineering student building AI-enabled and full-stack products with measurable outcomes.
-          Recent work includes semantic search and recommendation systems, React dashboards, and backend integrations
-          that connect technical implementation with product usability.
+        <p class="hero-summary">
+          Final-year Software Engineering student specializing in AI-powered search and full-stack systems, with hands-on experience building production-ready applications using LLMs, vector databases, and modern web technologies.
         </p>
+        <ul class="hero-bullets">
+          <li>Build AI-enabled web products with measurable results, not just prototypes.</li>
+          <li>Combine React and TypeScript frontends with Python and FastAPI backend services.</li>
+          <li>Focus on search relevance, user-facing dashboards, and scalable product workflows.</li>
+        </ul>
       </header>
 
       <div class="meta">
         <div class="meta-card">
           <span>Location</span>
-          Istanbul, Turkey
+          <strong>Istanbul, Turkey</strong>
         </div>
         <div class="meta-card">
           <span>Email</span>
-          yunusemree.sevinc@gmail.com
+          <a href="mailto:yunusemree.sevinc@gmail.com">yunusemree.sevinc@gmail.com</a>
         </div>
         <div class="meta-card">
           <span>GitHub</span>
-          github.com/yunussvnc
+          <a href="https://github.com/yunussvnc">github.com/yunussvnc</a>
         </div>
         <div class="meta-card">
           <span>LinkedIn</span>
-          linkedin.com/in/sevinc-yunusemre-23a926257
+          <a href="https://linkedin.com/in/sevin%C3%A7-yunusemre-23a926257/">linkedin.com/in/sevinc-yunusemre-23a926257</a>
         </div>
       </div>
 
@@ -262,29 +306,25 @@
             <div class="item">
               <h3>AI-LLM Place Discovery Service</h3>
               <div class="eyebrow">Python, FastAPI, Qdrant, Redis, Sentence Transformers, Groq, Gemma 2</div>
-              <p>
-                Built a semantic venue search service that understands natural-language queries, ranks results with
-                vector search and distance context, and optionally adds LLM-based reasoning.
-              </p>
-              <ul>
-                <li>5/5 documented location-aware tests passed.</li>
-                <li>2.086 s average response time, 75 ms warm response, 10.033 s cold start.</li>
-                <li>Current service flow indexes 198 real Istanbul venues in Qdrant.</li>
+              <ul class="compact-list">
+                <li>Built semantic search system for venue discovery using vector embeddings and FastAPI.</li>
+                <li>Implemented location-aware ranking and optional LLM reasoning for query interpretation.</li>
+                <li>Achieved 5/5 passing location-aware test scenarios with 75 ms warm response time.</li>
+                <li>Indexed 198+ Istanbul venues in Qdrant to improve search relevance for intent-based queries.</li>
               </ul>
+              <a class="project-link" href="https://github.com/yunussvnc/Bitirmeprojesi/tree/main/ai-llm">github.com/yunussvnc/Bitirmeprojesi/tree/main/ai-llm</a>
             </div>
 
             <div class="item">
               <h3>SEO Analytics Dashboard</h3>
               <div class="eyebrow">React, TypeScript, Tailwind CSS, Supabase, PostgreSQL</div>
-              <p>
-                Built a full-stack SEO workspace combining authentication, project tracking, keyword snapshots, report
-                generation, and admin-oriented content workflows in a single product surface.
-              </p>
-              <ul>
-                <li>Implemented 7 Supabase Edge Functions across key workflows.</li>
-                <li>Modeled 11 typed database-backed resources in the frontend client.</li>
-                <li>Exposed 4 SEO score dimensions and 3 page-speed metrics in the UI.</li>
+              <ul class="compact-list">
+                <li>Built full-stack SEO analytics dashboard with authentication, reporting, and admin workflows.</li>
+                <li>Implemented 7 Supabase Edge Functions across analysis, reporting, support, and content operations.</li>
+                <li>Modeled 11 typed data resources and surfaced 4 SEO score dimensions plus 3 page-speed metrics.</li>
+                <li>Improved usability for project-based SEO analysis with dashboard and report-center workflows.</li>
               </ul>
+              <a class="project-link" href="https://github.com/yunussvnc/seoanaliz">github.com/yunussvnc/seoanaliz</a>
             </div>
           </section>
 
@@ -294,19 +334,19 @@
             <div class="item">
               <h3>R&amp;D Engineer Intern</h3>
               <div class="eyebrow">Istanbul Health and Technology University | Jul 2025 - Aug 2025</div>
-              <p>
-                Supported AI-focused research and prototype implementation in a university R&amp;D environment,
-                contributing to experimentation and applied engineering tasks.
-              </p>
+              <ul class="compact-list">
+                <li>Supported AI-focused research and prototype implementation in a university R&amp;D environment.</li>
+                <li>Contributed to experimentation and applied engineering tasks across software and AI workflows.</li>
+              </ul>
             </div>
 
             <div class="item">
               <h3>AI Intern</h3>
               <div class="eyebrow">Arvis Teknoloji | Jul 2024 - Aug 2024</div>
-              <p>
-                Contributed to practical AI and machine learning implementation work, building hands-on experience in
-                model-oriented workflows and technical delivery.
-              </p>
+              <ul class="compact-list">
+                <li>Contributed to practical AI and machine learning implementation tasks in a team setting.</li>
+                <li>Built hands-on experience in model-oriented workflows and technical delivery.</li>
+              </ul>
             </div>
           </section>
 
@@ -321,49 +361,43 @@
 
         <aside class="side">
           <section>
-            <h2>Core Skills</h2>
-            <div class="pill-wrap">
-              <span class="pill">Python</span>
-              <span class="pill">TypeScript</span>
-              <span class="pill">React</span>
-              <span class="pill">FastAPI</span>
-              <span class="pill">Tailwind CSS</span>
-              <span class="pill">Supabase</span>
-              <span class="pill">PostgreSQL</span>
-              <span class="pill">TensorFlow</span>
-              <span class="pill">Scikit-learn</span>
-              <span class="pill">Sentence Transformers</span>
-              <span class="pill">Qdrant</span>
-              <span class="pill">Docker</span>
-            </div>
+            <h2>Skills</h2>
+            <div class="skill-group"><strong>Languages:</strong> Python, TypeScript, JavaScript</div>
+            <div class="skill-group"><strong>Frontend:</strong> React, Tailwind CSS, Vite</div>
+            <div class="skill-group"><strong>Backend:</strong> FastAPI, Supabase, Flask</div>
+            <div class="skill-group"><strong>AI / ML:</strong> TensorFlow, Scikit-learn, Sentence Transformers</div>
+            <div class="skill-group"><strong>Infra / Data:</strong> Docker, PostgreSQL, Qdrant, Pandas, NumPy</div>
           </section>
 
           <section>
-            <h2>Focus</h2>
-            <p>Artificial Intelligence</p>
-            <p>Machine Learning</p>
-            <p>Semantic Search</p>
-            <p>Full-Stack Product Development</p>
-            <p>Health-Tech Oriented Software</p>
+            <h2>Additional Projects</h2>
+            <div class="small-text">
+              <strong>Ayasofya Voice Guide:</strong> Voice-first cultural guide experience with conversational UX.
+            </div>
+            <a class="project-link" href="https://github.com/yunussvnc/ayasofya-voice-guide">github.com/yunussvnc/ayasofya-voice-guide</a>
+            <div class="small-text" style="margin-top: 12px">
+              <strong>IdentiPlant:</strong> Computer vision project for plant identification and image-based AI workflows.
+            </div>
+            <a class="project-link" href="https://github.com/devmehmetakifv/IdentiPlant">github.com/devmehmetakifv/IdentiPlant</a>
           </section>
 
           <section>
             <h2>Certifications</h2>
-            <p>T3 Foundation Underwater Systems Training (2025)</p>
-            <p>Arvis DeepTech AI Internship Program Certificate of Achievement (2024)</p>
+            <div class="cert-row">T3 Foundation Underwater Systems Training (2025)</div>
+            <div class="cert-row">Arvis DeepTech AI Internship Program Certificate of Achievement (2024)</div>
           </section>
 
           <section>
             <h2>Languages</h2>
-            <p>Turkish: Native</p>
-            <p>English: B1</p>
-            <p>Spanish: A1</p>
+            <div class="lang-row"><strong>Turkish:</strong> Native</div>
+            <div class="lang-row"><strong>English:</strong> Professional Working Proficiency</div>
+            <div class="lang-row"><strong>Spanish:</strong> A1</div>
           </section>
         </aside>
       </div>
 
       <div class="print-note">
-        Tip: open the browser print dialog and save as PDF for a clean one-page resume export.
+        Tip: this version is optimized for recruiter readability with short impact-focused bullets and direct project links.
       </div>
     </article>
   </body>
