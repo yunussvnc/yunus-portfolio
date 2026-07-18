@@ -14,10 +14,10 @@ export const profile = {
 } as const
 
 export const stats = [
-  { value: '5/5', label: 'location-aware chatbot tests passed', detail: 'validated in the documented AI service test suite' },
-  { value: '198', label: 'real Istanbul venues indexed', detail: 'used in the active semantic search flow' },
-  { value: '7', label: 'Supabase Edge Functions', detail: 'covering analysis, reporting, support, and admin operations' },
   { value: '92%', label: 'Precision@3', detail: 'semantic matching accuracy in the AsEmOs RAG pipeline' },
+  { value: '352', label: 'pytest cases', detail: 'maintained through the AsEmOs production rollout' },
+  { value: '148K+', label: 'historical matches scraped', detail: 'used to train the football prediction model' },
+  { value: '0.90', label: 'F1 score', detail: 'measured on AsEmOs semantic matching' },
 ] as const
 
 export const experience = [
@@ -38,27 +38,6 @@ export const experience = [
 ] as const
 
 export const projects = [
-  {
-    name: 'AI-LLM Place Discovery Service',
-    category: 'LLM / Semantic Search',
-    hero: 'Semantic venue retrieval with location-aware ranking, vector search, and optional LLM explanations.',
-    description:
-      'Built as part of a graduation project to let users search for venues with natural language rather than brittle keyword matching. The service combines vector search, retrieval logic, and an optional reasoning layer for more useful results.',
-    results: [
-      '5 out of 5 location-aware search tests passed in the documented test suite',
-      '2.086 s average response time with 75 ms warm responses',
-      '10.033 s cold-start response on the first request',
-    ],
-    highlights: [
-      'Uses sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2 with a 0.4 similarity threshold and top-5 ranking',
-      'Stores 198 real Istanbul venues in Qdrant for semantic retrieval',
-      'Supports interactive CLI search, distance calculation, and layered Groq/local Gemma analysis',
-    ],
-    stack: ['Python', 'FastAPI', 'Qdrant', 'Redis', 'Sentence Transformers', 'Groq', 'Gemma 2'],
-    github: 'https://github.com/yunussvnc/Bitirmeprojesi/tree/main/ai-llm',
-    demo: '',
-    visualClass: 'bg-gradient-to-br from-slate-950 via-blue-900 to-cyan-600',
-  },
   {
     name: 'AsEmOs',
     category: 'AI / RAG Platform',
